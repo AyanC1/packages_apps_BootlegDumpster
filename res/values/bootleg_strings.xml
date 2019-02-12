@@ -1076,6 +1076,10 @@
     <string name="gesture_anywhere_position_right">Right edge</string>
     <string name="gesture_anywhere_gestures_title">Gestures</string>
     <string name="gesture_anywhere_gestures_summary">Add, remove, and edit gestures</string>
+    <!-- Bottom Navigations -->
+    <string name="use_bottom_gesture_title">Use swipe up gestures for navigation</string>
+    <string name="use_bottom_gesture_summary">Works only with navigation bar disable</string>
+
     <!-- Label, button used to add a gesture -->
     <string name="ga_button_add">Add gesture</string>
     <!-- Label, button used to reload all gestures -->
