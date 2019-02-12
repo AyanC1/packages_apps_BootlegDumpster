@@ -40,7 +40,7 @@ import android.view.WindowManagerGlobal;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.liquid.liquidlounge.preferences.SystemSettingSeekBarPreference;
+import com.bootleggers.dumpster.preferences.SystemSettingSeekBarPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 

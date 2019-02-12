@@ -2,10 +2,16 @@ package com.bootleggers.dumpster.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 import android.content.ContentResolver;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.os.Bundle;
+import android.support.v7.preference.Preference;
+import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.utils.ActionUtils;
 import com.android.settings.R;
 import android.support.v14.preference.SwitchPreference;
 import com.android.settings.SettingsPreferenceFragment;
+import com.bootleggers.dumpster.preferences.SystemSettingSwitchPreference;
 
 public class GestureSettings extends SettingsPreferenceFragment {
    private static final String USE_GESTURE_NAVIGATION = "use_bottom_gesture";
@@ -23,10 +29,6 @@ public class GestureSettings extends SettingsPreferenceFragment {
 
     }
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BOOTLEG;
-    }
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 	ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mGestureNavigation) {
@@ -36,4 +38,9 @@ public class GestureSettings extends SettingsPreferenceFragment {
             return true;
 	}
 	return false;
+}
+@Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.BOOTLEG;
+    }
 }
