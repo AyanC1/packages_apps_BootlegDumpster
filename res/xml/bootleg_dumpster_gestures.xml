@@ -30,6 +30,11 @@
         android:title="@string/edge_gestures_title" 
         android:summary="@string/edge_gestures_summary" 
         android:fragment="com.bootleggers.dumpster.external.EdgeGesturesSettings"/>
+    <Preference
+        android:key="gesture_settings"
+        android:title="@string/gesture_settings_title"
+        android:summary="@string/gesture_settings_summary"
+        android:fragment="com.nitrogen.settings.fragments.OmniGestureSettings" />
 
     <Preference
         android:key="gesture_anywhere"
