@@ -51,6 +51,8 @@
 
     <string name="about_bootleg_title">About Bootleggers</string>
     <string name="about_bootleg_summary">Some info about us, just in case you\'re curious about it</string>
+    <string name="about_bootleg_small_title">About us</string>
+    <string name="about_bootleg_small_summary">Some more info about our project</string>
 
     <!-- DUMPSTER - About Section strings -->
     <string name="bootleg_pref_title_about_us">About us</string>
@@ -76,8 +78,6 @@
     <string name="bootleg_moarstuff_git_title">Our Github</string>
     <string name="bootleg_moarstuff_git_summary">Where our sources and reverts are placed</string>
     <string name="bootleg_pref_moarstuff_social_title">Get in touch!</string>
-    <string name="bootleg_moarstuff_gplus_title">Our Google+ Community</string>
-    <string name="bootleg_moarstuff_gplus_summary">Send screenshots, give us feedback, whatever you want but in a respectful way</string>
     <string name="bootleg_moarstuff_tg_title">Our Telegram Community</string>
     <string name="bootleg_moarstuff_tg_summary">Talk with us, get hyped with future updates and join our great community</string>
     <string name="bootleg_pref_moarstuff_wewsecret">I think you found this really not so secret place but well, if you got here i just want to let you know that thank you for flashing this ROM and welp, as we said many times before, hope you enjoy it and have a good time with this ROM.</string>
@@ -143,6 +143,7 @@
     <string name="anim_general_category">Overall Animations</string>
     <string name="anim_system_category">System related</string>
     <string name="misc_settings_cat_title">Settings app related</string>
+    <string name="general_system_stuff_preference">System Behaviour</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
@@ -177,7 +178,7 @@
     <string name="statusbar_tuner_summary">Battery options and statusbar icons to disable</string>
     <string name="navbar_tuner_title">Edit navigation bar</string>
     <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
-    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_title">Bottom Lockscreen shortcuts</string>
     <string name="lockscreen_shortcuts_summary">Manage lockscreen bottom shortcuts</string>
     <string name="vol_dnd_category_title">Do not disturb mode</string>
     <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
@@ -406,46 +407,6 @@
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
 
-    <!-- Status bar clock options -->
-    <string name="status_bar_clock">Clock &amp; Date</string>
-    <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
-    <string name="status_bar_clock_advanced_title">Advanced options</string>
-    <string name="status_bar_clock_advanced_title_alt">Advanced Clock &amp; Date options</string>
-    <string name="status_bar_clock_advanced_summary">Tweak the clock to your satisfaction</string>
-    <string name="clock_title_enable">Alignment</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_clock_style_reset">Reset color</string>
-    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
-    <string name="status_bar_clock_seconds_title">Show seconds</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Right clock</string>
-    <string name="left_clock">Left clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
-    <string name="clock_date_format_custom">Custom java format</string>
-    <string name="clock_date_right">Right of time</string>
-    <string name="clock_date_left">Left of time</string>
-    <string name="clock_date_position">Date position</string>
-
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G icon on Statusbar</string>
     <string name="show_fourg_icon_summary">On signal icon, show 4G instead of LTE</string>
@@ -593,7 +554,7 @@
     <string name="recents_component_type_title">Recents Style</string>
     <string name="recents_quickstep">Quickstep (if avaliable)</string>
     <string name="recents_stock">Stock</string>
-    <!-- <string name="recents_grid">Grid</string> -->
+    <string name="recents_grid">Grid</string>
     <string name="recents_go">Android Go</string>
 
     <!-- QS tile styles -->
@@ -874,7 +835,7 @@
     <string name="shortcut_picker_icon_type_custom_title">Gallery</string>
 
     <!-- Lockscreen Shortcuts -->
-    <string name="ls_shortcuts_title">Mid-screen shortcuts</string>
+    <string name="ls_shortcuts_title">Shortcuts</string>
     <string name="lockscreen_mdshortcuts_title">Mid-screen Shortcuts</string>
     <string name="lockscreen_mdshortcuts_summary">View or change custom lock screen mid-screen shortcuts</string>
     <string name="lockscreen_shorcuts_launch_type_title">Shortcut click type</string>
@@ -1167,10 +1128,249 @@
     <string name="corner_fwvals">Use framework values</string>
     <string name="corner_fwvals_summary">Useful if the device actually has rounded corners</string>
 
-
-
     <!-- ambient visualizer -->
     <string name="ambient_visualizer_title">Show LS Visualizer on Ambient Display</string>
     <string name="ambient_visualizer_summary">Shows the visualization bars also on ambient display (but less opaque)</string>
 
+    <!-- Lockscreen items -->
+    <string name="lockscreen_hide_items_category">Hide items</string>
+    <string name="lockscreen_clock_title">Clock widget</string>
+    <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
+    <string name="lockscreen_info_title">Items underneath the clock</string>
+    <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+
+    <!-- Lockscreen clock styles -->
+    <string name="lockscreen_clock_styles_category">Lockscreen styles</string>
+    <string name="lockscreen_clock_selection_title">Clock style</string>
+    <string name="lockscreen_clock_selection_digital">Default</string>
+    <string name="lockscreen_clock_selection_digital_bold">Digital (bold)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string>
+    <string name="lockscreen_clock_selection_sammy">Sammy</string>
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy with accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy with accent (alt)</string>
+    <string name="lockscreen_clock_selection_shishu_dreams" translatable="false">@string/system_theme_style_shishu</string>
+    <string name="lockscreen_clock_selection_shishu_immensity" translatable="false">@string/system_theme_style_shishuimmensity</string>
+    <string name="lockscreen_clock_selection_shishu_nerves">Shishu Nerves</string>
+    <string name="lockscreen_clock_selection_gradient_btlglogo">Gradient clock (with bootleg logo)</string>
+    <string name="lockscreen_clock_selection_gradient_shishu">Gradient clock (with shishu logo)</string>
+    <string name="lockscreen_clock_selection_gradient_full">Full gradient clock</string>
+    <string name="lockscreen_clock_selection_gradient_likeqs">Monochrome gradient clock</string>
+
+    <!-- QS Headers -->
+    <string name="status_bar_custom_header_title">Enable</string>
+    <string name="daylight_header_pack_title">Header image collection</string>
+    <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider" translatable="false">static</string>
+    <string name="daylight_header_provider" translatable="false">daylight</string>
+    <string name="static_header_provider_title">Static image</string>
+    <string name="daylight_header_provider_title">Image collection</string>
+    <string name="custom_header_provider_title">Header provider</string>
+    <string name="custom_header_browse_title">Browse installed headers</string>
+    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
+    <string name="custom_header_browse_summary_new">Browse all available header collections</string>
+    <string name="custom_header_pick_title">Select header image</string>
+    <string name="custom_header_pick_summary">Select an image to use for static mode</string>
+    <string name="style_enabled_summary">Custom header image is ON</string>
+    <string name="style_disabled_summary">Custom header image is OFF</string>
+    <string name="header_provider_disabled">Disabled</string>
+    <string name="custom_header_title">Custom header image</string>
+    <string name="file_header_select_title">Select image</string>
+    <string name="file_header_select_summary">Select custom image</string>
+    <string name="file_header_provider_title">Custom image</string>
+    <string name="file_header_provider" translatable="false">file</string>
+
+    <!-- Volume Panel on Left -->
+    <string name="volume_panel_category">Volume panel</string>
+    <string name="volume_panel_on_left_title">Volume Panel on Left</string>
+    <string name="volume_panel_on_left_summary">Change volume panel from right side to left side</string>
+
+    <!-- Audio Panel view  -->
+     <string name="audio_panel_view">Volume panel view</string>
+     <string name="audio_panel_view_media_title">Media</string>
+     <string name="audio_panel_view_ringer_title">Ring</string>
+     <string name="audio_panel_view_notification_title">Notification</string>
+     <string name="audio_panel_view_alarm_title">Alarm</string>
+     <string name="audio_panel_view_voice_title">Voice</string>
+     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
+
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Save battery by shutting off extra pixels</string>
+    <string name="smart_pixels_enable_title">Enable Smart Pixels</string>
+    <string name="smart_pixels_enable_summary">Shut off pixels to reduce power consumption</string>
+    <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+    <string name="smart_pixels_on_power_save_summary">Enable Smart Pixels when battery saver is enabled</string>
+    <string name="smart_pixels_percent">Percent of pixels to disable</string>
+    <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
+    <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
+
+    <!-- Statusbar Clock options -->
+    <string name="status_bar_clock_title">Status bar clock</string>
+    <string name="status_bar_clock_summary_on">Showing status bar clock</string>
+    <string name="status_bar_clock_summary_off">Hiding status bar clock</string>
+    <string name="status_bar_clock_seconds_summary_on">Showing clock with seconds</string>
+    <string name="status_bar_clock_seconds_summary_off">Showing clock normally</string>
+    <string name="status_bar_clock_adv_title">Advanced clock and date options</string>
+    <string name="status_bar_clock_adv_summary">Tweak the clock according to your tastes</string>
+    <string name="status_bar_time_cat">Time</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
+    <string name="clock_title_enable">Alignment</string>
+    <string name="clock_position">Clock position</string>
+    <string name="clock_position_right">Right clock</string>
+    <string name="clock_position_center">Center clock</string>
+    <string name="clock_position_left">Left clock</string>
+    <string name="status_bar_clock_seconds_title">Show clock seconds</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date style</string>
+    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_save">Save</string>
+
+    <!-- Active edge -->
+    <string name="active_edge_title">Active Edge</string>
+    <string name="active_edge_summary">An advanced version of the Pixel squeeze feature</string>
+    <string name="active_edge_actions_title">Squeeze action</string>
+    <string name="active_edge_long_squeeze_actions_title">Long squeeze action</string>
+    <string name="active_edge_sensitivity_title">Squeeze sensitivity</string>
+    <string name="active_edge_wake_title">Allow when screen is off</string>
+    <string name="active_edge_wake_summary">Trigger any action even when the screen is off</string>
+    <string name="active_edge_footer_info">Not all squeeze actions within Active Edge have the capability to activate the display</string>
+
+    <!-- Lockscreen cover art filter -->
+    <string name="lockscreen_cover_filter_title">Lockscreen album art filter</string>
+    <string name="lockscreen_cover_filter_none">None</string>
+    <string name="lockscreen_cover_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_cover_filter_tint">Accent tinted</string>
+    <string name="lockscreen_cover_filter_blur">Blur</string>
+    <string name="lockscreen_cover_filter_grayblur">Grayscale and blurred</string>
+
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+
+    <!-- Recents categories-->
+    <string name="aosp_recents_category">AOSP recents</string>
+    <string name="slim_recents_category">Slim recents</string>
+    <string name="alternative_recents_swipe_up_enabled_warning_summary">When using swipe up home navigation to open recents, only stock recents are supported</string>
+
+    <!-- Slim recents -->
+    <string name="slim_recents_title">Slim recents</string>
+    <string name="slim_recents_settings_title">Slim recents settings</string>
+    <string name="recents_max_apps_title">Max allowed apps</string>
+    <string name="recent_panel_scale_title">Size</string>
+    <string name="recent_panel_expanded_mode_title">Expanded mode</string>
+    <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Always</string>
+    <string name="recent_panel_expanded_mode_never">Never</string>
+    <string name="recent_panel_expanded_mode_disabled">Disabled</string>
+    <string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="slim_recents_mem_display_long_click_clear_title">Memory bar longpress</string>
+    <string name="slim_recents_mem_display_long_click_clear_summary">Clear recents by long-pressing the memory bar</string>
+    <string name="slim_icon_pack_title">Icon Pack</string>
+    <string name="slim_icon_pack_summary">Apply a custom icon pack for apps in the panel</string>
+    <string name="slim_recents_corner_radius_title">Card corner radius</string>
+    <string name="slim_recents_aicp_empty_drawable_title">AICP empty recents</string>
+    <string name="slim_recents_aicp_empty_drawable_summary">Image to show when no recent apps</string>
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
+    <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+    <string name="slim_blacklist_apps_cat_title">Blacklist</string>
+    <string name="slim_blacklist_apps_title">Apps blacklist</string>
+    <string name="slim_blacklist_apps_summary">Apps to not show in the panel</string>
+    <string name="slim_blacklist_add_apps_title">Add app</string>
+    <string name="slim_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
+
+    <!-- Slim recents membar -->
+    <string name="slim_recents_mem_display_category_title">Memory bar</string>
+    <string name="slim_recents_mem_display_title">Show memory bar</string>
+    <string name="slim_recents_mem_display_summaryOn">Memory bar enabled</string>
+    <string name="slim_recents_mem_display_summaryOff">Memory bar disabled</string>
+    <string name="slim_recents_mem_display_color">Memory bar color</string>
+    <string name="slim_recents_mem_display_text_color">Memory bar text color</string>
+
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button</string>
+    <string name="recents_clear_all_location_title">Clear all location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+
+    <!-- Recents membar -->
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
+
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+    <string name="quick_pulldown_always">Always</string>
+
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open quick settings when there are %1$s notifications</string>
+    <string name="smart_pulldown_none_summary">Open quick settings when there are no notifications</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_none">no notifications</string>
+    <string name="smart_pulldown_dismissable">no dismissable</string>
+    <string name="smart_pulldown_ongoing">no ongoing</string>
+
+    <!-- Allow to slide qs on lock -->
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+
+    <!-- Display cutout options -->
+    <string name="cutout_main">Display cutout settings</string>
+    <string name="cutout_main_summary">They really cut corners with this one</string>
+    <string name="display_cutout_style_title">Cutout style</string>
+    <string name="display_cutout_style_normal">Normal</string>
+    <string name="display_cutout_style_immerse">Immerse</string>
+    <string name="display_cutout_style_hide">Hide</string>
+    <string name="stock_statusbar_in_hide">Stock statusbar height</string>
+    <string name="stock_statusbar_in_hide_summary">Use default statusbar height in Hide</string>
+
+    <!-- The no-no list, messages explaining why some features are disabled -->
+    <string name="no_no_summary_locked">This feature is unavailable because you don\'t have a secured lockscreen. </string>
+    <string name="no_no_summary_go">This feature is unavailable because you have Android Go enabled.</string>
+    <string name="no_no_summary_owner">This feature is unavailable because you don\'t have an owner info message</string>
+
+    <!-- Bootleg changelog -->
+    <string name="bootleg_changelog_title">See the changelog</string>
+    <string name="bootleg_changelog_summary">See the latest changes added on this build</string>
+
+    <!-- Swipe up gesture -->
+    <string name="swipeup_settings_summary">Swipe up to switch apps</string>
 </resources>

@@ -55,16 +55,18 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-
+        final PreferenceScreen prefSet = getPreferenceScreen();
         addPreferencesFromResource(R.xml.bootleg_dumpster_misc);
+
+        PreferenceCategory overallPreferences = (PreferenceCategory) findPreference("misc_overall_cat");
 
         Preference DeviceExtras = findPreference(DEVICE_CATEGORY);
         if (!getResources().getBoolean(R.bool.has_device_extras)) {
-            getPreferenceScreen().removePreference(DeviceExtras);
+            overallPreferences.removePreference(DeviceExtras);
         }
 
         if (!Utils.isPackageInstalled(getActivity(), DEVICE_OMNI_PACKAGE)) {
-            getPreferenceScreen().removePreference(findPreference(DEVICE_OMNI_CATEGORY));
+            overallPreferences.removePreference(findPreference(DEVICE_OMNI_CATEGORY));
         }
 
         final PreferenceCategory aspectRatioCategory =
@@ -90,20 +92,29 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefScreen = getPreferenceScreen();
         PreferenceCategory callSettings = (PreferenceCategory) findPreference(CALL_SETTINGS_OPTIONS);
-        if (!Utils.isVoiceCapable(getActivity())) {
-            prefScreen.removePreference(callSettings);
-        }
 
         mFlashlightOnCall = (ListPreference) findPreference(FLASHLIGHT_ON_CALL);
         Preference FlashOnCall = findPreference("flashlight_on_call");
         if (!Utils.deviceSupportsFlashLight(getActivity())) {
-            prefScreen.removePreference(FlashOnCall);
+            callSettings.removePreference(FlashOnCall);
         } else {
         int flashlightValue = Settings.System.getInt(getContentResolver(),
-                Settings.System.FLASHLIGHT_ON_CALL, 1);
+                Settings.System.FLASHLIGHT_ON_CALL, 0);
         mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
         mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
         mFlashlightOnCall.setOnPreferenceChangeListener(this);
+        }
+
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefScreen.removePreference(callSettings);
+        }
+
+        boolean enableSmartPixels = getContext().getResources().
+                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+        Preference smartPixelsPref = (Preference) findPreference("smart_pixels");
+
+        if (!enableSmartPixels){
+            overallPreferences.removePreference(smartPixelsPref);
         }
     }
 

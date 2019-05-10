@@ -35,7 +35,7 @@
             android:summary="@string/bootleg_ab_summary_thankssec">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://bootleggersrom.github.io/thanks" />
+                android:data="https://bootleggersrom.github.io/about/#thanks" />
         </Preference>
 
     </PreferenceCategory>
@@ -44,6 +44,12 @@
     <PreferenceCategory
         android:title="@string/bootleg_pref_title_romextras"
         android:key="pref_bootleg_extras">
+
+        <Preference
+            android:key="bootleg_changelog"
+            android:title="@string/bootleg_changelog_title"
+            android:summary="@string/bootleg_changelog_summary"
+            android:fragment="com.android.settings.deviceinfo.Changelog"/>
 
         <Preference
             android:key="bootleg_listfeatures"
@@ -60,7 +66,7 @@
             android:summary="@string/bootleg_ex_summary_addons">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://bootleggersrom.github.io/romstuff/addons" />
+                android:data="https://bootleggersrom.github.io/extras/addons" />
         </Preference>
 
         <Preference
